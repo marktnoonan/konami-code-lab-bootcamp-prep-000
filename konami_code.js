@@ -10,11 +10,13 @@ const codes = [
   "b",
   "a"
 ];
-
+const matchingKeypresses = []
 function init() {
   // your code here
-  const matchingKeypresses = []
-  document.body.addEventListener('keydown', function(key) {
-    console.log(key)
+
+  document.body.addEventListener('keydown', function(event) {
+    if (codes[matchingKeypresses.length] === event.key){
+      matchingKeypresses.push(event.key)
+    }
   })
 }
