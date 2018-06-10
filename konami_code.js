@@ -21,7 +21,7 @@ function init() {
     } else {
       matchingKeypresses = []
     }
-    if (matchingKeypresses.length === code.length){
+    if (matchingKeypresses.length === codes.length){
       alert("You easter egg'd!")
     }
   })
