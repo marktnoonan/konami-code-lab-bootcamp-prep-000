@@ -17,6 +17,7 @@ function init() {
   document.body.addEventListener('keydown', function(event) {
     if (codes[matchingKeypresses.length] === event.key){
       matchingKeypresses.push(event.key)
+      console.log(matchingKeypresses)
     } else {
       matchingKeypresses = []
     }
